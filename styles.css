@@ -84,7 +84,7 @@ p {
 }
 
 .logo {
-    width: 400px;
+    width: 300px;
     height: auto;
     object-fit: contain;
 }
@@ -422,6 +422,7 @@ p {
         display: none;
     }
 }
+
 
 
 
