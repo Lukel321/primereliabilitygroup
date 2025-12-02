@@ -85,7 +85,7 @@ p {
 
 .logo {
     width: 90px;
-    height: autopx;
+    height: auto;
     object-fit: contain;
 }
 
@@ -422,4 +422,5 @@ p {
         display: none;
     }
 }
+
 
