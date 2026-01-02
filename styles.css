@@ -424,33 +424,43 @@ p {
 }
 
 /* Product Showcase (image under Products heading) */
-
 .product-showcase {
     margin: 1.25rem 0 2rem;
+    padding: 0;
     background: linear-gradient(145deg, var(--color-card), var(--color-bg-alt));
     border: 1px solid var(--color-border);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-soft);
-    overflow: hidden; /* ensures rounded corners clip the image */
+    overflow: hidden;              /* clips rounded corners */
+}
+
+/* IMPORTANT: remove default figure margin behavior in some browsers */
+figure.product-showcase {
+    margin: 1.25rem 0 2rem;        /* explicit figure margin */
+}
+
+/* Make sure picture behaves like a block wrapper */
+.product-showcase picture {
+    display: block;
 }
 
 .product-showcase img {
     width: 100%;
-    height: auto;          /* prevents stretching */
+    height: auto;                  /* prevents stretching */
     display: block;
+    border-bottom: 1px solid var(--color-border);
 }
 
 .product-showcase figcaption {
+    display: block;
+    margin: 0;                     /* IMPORTANT: keep caption inside */
     padding: 0.9rem 1.1rem 1.1rem;
     font-size: 0.95rem;
     color: var(--color-text-muted);
     line-height: 1.5;
 }
 
-.product-showcase {
-  max-width: 1000px;   /* or 900px */
-  margin: 1.25rem auto 2rem; /* centers it */
-}
+
 
 
 
