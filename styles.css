@@ -447,6 +447,13 @@ p {
     line-height: 1.5;
 }
 
+.product-showcase {
+  max-width: 1000px;   /* or 900px */
+  margin: 1.25rem auto 2rem; /* centers it */
+}
+
+
+
 
 
 
