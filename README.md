@@ -10,12 +10,25 @@ Publish the contents of this folder at the root of the existing GitHub Pages pub
 - `tools.html`: existing software product offerings, retained as a secondary page.
 - `privacy.html`: website privacy information.
 - `styles.css`, `site.js`: responsive styling and accessible interactions.
+- `cookie-consent.js`, `cookie-consent.css`: cookie preference banner, accessible settings dialog, and first-party preference storage.
 - `assets/`: existing company logo/product image, original technical illustration, and local font.
 - `robots.txt`, `sitemap.xml`, `.nojekyll`, `favicon.png`: hosting and discovery support.
 
 ## Contact behavior
 
 The inquiry form prepares a visible email draft addressed to `Inquiry@primereliabilitygroup.com`. It does not send automatically, post to a database, or claim a successful submission. The visitor can open the draft in an email app, copy its contents, or use the direct email links. Project inquiries use `Inquiry@primereliabilitygroup.com`; support uses `support@primereliabilitygroup.com`. A direct web-form delivery service can be integrated later if desired.
+
+## Cookie preferences and future advertising
+
+No advertising provider, analytics tag, tracking image, or remote advertising request is connected. Accepting advertising currently records a preference only. The banner offers equally prominent Accept advertising and Reject advertising buttons. Cookie settings are available from every footer and the privacy page, and visitors can withdraw their preference.
+
+The first-party `prg_cookie_preferences` cookie is written only after an explicit choice. It stores a boolean advertising preference, version, scope (`unconfigured`), and expiry for 180 days, with Path=/, SameSite=Lax, and Secure on HTTPS. Invalid, expired, or differently scoped/versioned preferences are ignored. With cookies blocked, the choice lasts only for the current document. No visitor ID, email, or inquiry content is stored in it.
+
+`window.prgCookieConsent.getPreference()` exposes the current preference. `advertisingEnabled` is deliberately always false; the `prg:cookie-preference` event does not authorize a vendor. Do not treat the existing unconfigured preference as consent for a future provider.
+
+Before adding Google Ads or Meta: obtain the real account/tag ID; update the privacy disclosures and dialog with the named provider, purposes, and cookie details; change the preference scope/version and request fresh consent; implement gated loading with no vendor requests before acceptance, and vendor-specific revocation when rejected. Do not add ungated scripts, image pixels, preconnects, or advanced cookieless measurement. Preparing or opening an email draft is not a confirmed lead submission.
+
+When editing consent JavaScript or CSS, update the content-version query on all three HTML pages so returning visitors receive the change.
 
 ## Update the existing GitHub Pages site
 
