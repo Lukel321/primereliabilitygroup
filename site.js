@@ -65,7 +65,7 @@
   const preview = document.querySelector('#inquiry-preview');
   const draftLink = document.querySelector('#email-draft-link');
   const copy = document.querySelector('#copy-inquiry');
-  const recipient = 'Sales@PrimeReliabilityGroup.com';
+  const recipient = 'Inquiry@primereliabilitygroup.com';
   let currentInquiry = '';
   form.addEventListener('submit', event => {
     event.preventDefault();
@@ -92,7 +92,7 @@
     try {
       await navigator.clipboard.writeText(currentInquiry);
       copy.textContent = 'Copied';
-      status.textContent = 'Inquiry copied. Paste it into an email to Sales@PrimeReliabilityGroup.com and send when ready.';
+      status.textContent = 'Inquiry copied. Paste it into an email to Inquiry@primereliabilitygroup.com and send when ready.';
     } catch {
       document.querySelector('.draft-details').open = true;
       const range = document.createRange();
