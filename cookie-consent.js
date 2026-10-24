@@ -95,6 +95,7 @@
     control.addEventListener('click', () => savePreference(control.dataset.cookieChoice === 'accept'));
   });
   dialog.querySelector('.cookie-dialog-close').addEventListener('click', closeSettings);
+  dialog.querySelector('a').addEventListener('click', closeSettings);
   dialog.querySelector('#cookie-preferences').addEventListener('submit', event => {
     event.preventDefault();
     savePreference(checkbox.checked);
