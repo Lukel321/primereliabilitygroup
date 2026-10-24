@@ -15,7 +15,7 @@ Publish the contents of this folder at the root of the existing GitHub Pages pub
 
 ## Contact behavior
 
-The inquiry form prepares a visible email draft addressed to `Sales@PrimeReliabilityGroup.com`. It does not send automatically, post to a database, or claim a successful submission. The visitor can open the draft in an email app, copy its contents, or use the direct email links. A direct web-form delivery service can be integrated later if desired.
+The inquiry form prepares a visible email draft addressed to `Inquiry@primereliabilitygroup.com`. It does not send automatically, post to a database, or claim a successful submission. The visitor can open the draft in an email app, copy its contents, or use the direct email links. Project inquiries use `Inquiry@primereliabilitygroup.com`; support uses `support@primereliabilitygroup.com`. A direct web-form delivery service can be integrated later if desired.
 
 ## Update the existing GitHub Pages site
 
@@ -31,7 +31,7 @@ Future updates should preserve the custom domain, relative asset paths, and the 
 
 ## Content
 
-Company name, Louisiana location, email, logo, and software product information were taken from the existing public website. Service copy reflects the requested equipment-assessment, maintenance-planning, RCA, and corrective-action consulting offer. The sample deliverables are clearly illustrative. No customer testimonials, performance statistics, certifications, customer names, or guaranteed outcomes have been invented.
+Company name, Louisiana location, logo, and software product information were taken from the existing public website. Contact email addresses were supplied by the owner. Service copy reflects the requested equipment-assessment, maintenance-planning, RCA, and corrective-action consulting offer. The sample deliverables are clearly illustrative. No customer testimonials, performance statistics, certifications, customer names, or guaranteed outcomes have been invented.
 
 ## Preview
 
